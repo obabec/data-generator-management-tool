@@ -5,12 +5,6 @@ pipeline {
 
     stages {
 
-        stage('Wait') {
-            steps {
-                sh 'sleep 20'
-            }
-        }
-
         stage('Checkstyle') {
             steps {
                 sh '''
