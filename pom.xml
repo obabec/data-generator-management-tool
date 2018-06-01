@@ -40,7 +40,7 @@
    <developers>
       <developer>
          <id>obabec</id>
-         <email>benessi1@fit.c</email>
+         <email>ond.babec@gmail.com</email>
          <organization>Red Hat</organization>
          <name>Ondřej Babec</name>
          <roles>
@@ -85,17 +85,6 @@
          <name>Mirek Jaroš</name>
          <roles>
             <role>Tech lead</role>
-         </roles>
-         <timezone>Europe/Prague</timezone>
-      </developer>
-      <developer>
-         <id>sakalmic</id>
-         <email>sakalmic@fit.cvut.cz</email>
-         <organization>AirFit</organization>
-         <name>Michal Sakala</name>
-         <roles>
-            <role>developer</role>
-            <role>communicationsMaster</role>
          </roles>
          <timezone>Europe/Prague</timezone>
       </developer>
