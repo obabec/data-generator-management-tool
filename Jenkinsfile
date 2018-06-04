@@ -8,7 +8,7 @@ pipeline {
         stage('Checkstyle') {
             steps {
                 sh '''
-                 mvn compile
+                 mvn -B compile
                 '''
             }
             post {
@@ -22,7 +22,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''
-                  mvn test
+                  mvn -B test
                 '''
             }
         }
