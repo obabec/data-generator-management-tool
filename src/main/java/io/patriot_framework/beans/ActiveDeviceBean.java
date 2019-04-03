@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Patriot project
+ * Copyright 2019 Patriot project
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -14,38 +14,22 @@
  *    limitations under the License.
  */
 
-package com.redhat.patriot.sample;
+package io.patriot_framework.beans;
 
-/**
- * Simple counter file
- */
-public class SampleCounter {
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import io.patriot_framework.generator.device.active.ActiveDevice;
+import io.patriot_framework.generator.device.active.ActiveDeviceImpl;
 
-    private int count;
+public class ActiveDeviceBean {
 
-    SampleCounter() {
-        this.count = 0;
+    @JsonDeserialize(as = ActiveDeviceImpl.class)
+    private ActiveDevice activeDevice;
+
+    public ActiveDevice getDevice() {
+        return activeDevice;
     }
 
-    /**
-     * Get current value
-     * @return current value
-     */
-    public int getCount() {
-        return this.count;
-    }
-
-    /**
-     * Increments current value by one
-     */
-    public void increment() {
-        this.count++;
-    }
-
-    /**
-     * Decrements current value by one
-     */
-    public void decrement() {
-        this.count--;
+    public void setDevice(ActiveDevice device) {
+        this.activeDevice = device;
     }
 }
