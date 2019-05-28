@@ -25,7 +25,6 @@ import io.patriot_framework.beans.ActiveDeviceBean;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 
 public class DeviceYamlBuilder {
 
@@ -44,7 +43,7 @@ public class DeviceYamlBuilder {
 
     public void startActiveDevices() {
         for(ActiveDeviceBean device : activeDeviceBeans) {
-            device.getDevice().startSimulation();
+            device.getDevice().start();
         }
     }
 
